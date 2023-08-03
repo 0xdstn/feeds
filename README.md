@@ -22,7 +22,7 @@ Set up a cron job for the scraper. I have it set up to run every hour like so:
 % 0 * * * * cd /var/www/html/feeds && ./scrape.py >/dev/null 2>&1
 ```
 
-The cron job takes any URL that hasn't been scraped in `data.txt`, pulls the title and the contents for it via web scraping, updates `data.txt` with the title, and generates an HTML file of the contents in the `articles` directory.
+The cron job loops through and pulls the feeds in `feeds.txt`, adds it to the list in `data.txt`, and generates an HTML file of the contents in the `articles` directory.
 
 ## Usage
 
