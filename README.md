@@ -14,6 +14,8 @@ Place the contents of the repo in a directory called **feeds** inside your root 
 
 Create a `key.txt` file one directory up from your root web directory (such as **/var/www**). _This should not be accessible via a browser_.
 
+Create an `articles` directory in the feeds directory.
+
 Create a `data.txt` file and a `feeds.txt` file in the feeds directory.
 
 Set up a cron job for the scraper. I have it set up to run every hour like so:
