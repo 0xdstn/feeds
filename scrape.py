@@ -27,7 +27,7 @@ for feed in feeds:
 
         if not os.path.isfile('articles/'+guid+'.html'):
             try:
-                articleHtml = '<!DOCTYPE html><html lang="en"><head><title>'+entry.title+'</title><style type="text/css">body{font-size:20px;}</style></head><body>'
+                articleHtml = '<!DOCTYPE html><html lang="en"><head><title>'+entry.title+'</title><link rel="stylesheet" href="style.css" /></head><body>'
                 articleHtml += '<h1>'+entry.title+'</h1>'
                 articleHtml += '<p><strong>Source: <a href="' + entry.link + '" target="_blank">' + entry.link + '</a></strong></p>'
                 articleHtml += '<p>[<a href="../read.php?key='+key+'&id='+guid+'">mark read</a>]</p>'
