@@ -13,7 +13,7 @@
 
     function home() {
         global $key;
-        header('Location: /feeds?key=' . $key);
+        header('Location: /feed-reader?key=' . $key);
     }
 
 ?>
